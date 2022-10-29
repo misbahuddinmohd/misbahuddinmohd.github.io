@@ -1,11 +1,296 @@
-<!DOCTYPE html>
+
 <html>
     <head>
+        <style>
+           html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Handlee', cursive;
+    font-size: 13pt;
+    background-color: #164243;
+    padding: 10px;
+    margin: 0;
+}
+h2 {
+    font-size: 15pt;
+    color: #20bcd5;
+    text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+}
+h2 span {
+    border: 4px dashed #20bcd5;
+    padding: 10px;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+.img-circle {
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.section {
+    background-color: #000000;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.myDiv {
+    background-color: #eba10e;
+    font-size: 15pt;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    color: purple;
+}
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #164243;
+  background-color: transparent;
+  text-decoration: underline;
+}
+#header {
+    background-image: url("https://drive.google.com/uc?export=view&id=1BQ_VvuTT8MjLmF9ouxQ6m6Sm5-YdEfon");
+    background-size: cover;
+}
+#header img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+#header p {
+    font-size: 25pt;
+    color: #FFFFFF;
+    text-shadow: 2px 2px #000000;
+    padding-top: 5px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+.quote {
+    font-size: 12pt;
+    text-align: right;
+    margin-top: 10px;
+}
+table {
+    width: 100%;
+    font-size: 11pt;
+}
+table, th, td {
+    border: 2px solid #cecece;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+}
+.selected {
+    background-color: #f36f48;
+    font-weight: bold;
+    color: white;
+}
+li {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+progress {
+    width: 70%;
+    height: 20px;
+    color: #3fb6b2;
+    background: #efefef;
+}
+progress::-webkit-progress-bar {
+    background: #efefef;
+}
+progress::-webkit-progress-value {
+    background: #3fb6b2;
+} 
+progress::-moz-progress-bar {
+    color: #3fb6b2;
+    background: #efefef;
+}
+iframe, audio {
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #3fb6b2;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #f36f48;
+}
+form {
+    text-align: center;
+    margin-top: 0;
+}
+.submit {
+    background-color: #3fb6b2;
+    padding: 12px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin: 0;
+    font-weight: bold;
+}
+.submit:hover {
+    background-color: #43a09d;
+}
+textarea {
+    height: 100px;
+}
+input, textarea {
+    margin-bottom: 10px;
+    font-size: 11pt;
+    padding: 15px 10px 10px;
+    border: 1px solid #cecece;
+    background-color: #efefef;
+    color: #787575;
+    border-radius: 5px;
+    width: 70%;
+    outline: none;
+}
+.face {
+    transform: scale(0.4);
+    margin: 0 auto;
+    display: block;
+    margin-top: -35px;
+    margin-bottom: -25px;
+}
+#contacts img {
+    height: 50px;
+    width: 50px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+#contacts a {
+    text-decoration: none;
+}
+#contacts img:hover {
+    opacity: 0.8;
+}
+#contacts {
+    text-align: center;
+}
+.copyright {
+    font-size: 8pt;
+    text-align: right;
+    padding-bottom: 10px;
+    color: white;
+} 
+        </style>
         <title>My Blog</title>
+        <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
     </head>
-
+    
     <body>
-        <p> <h1> Hello. This site is under development. Thanks </h1> </p>
-
+        <!-- header start -->
+        <div id="header" class="section">
+            <img alt="" class="img-circle" src="https://drive.google.com/uc?export=view&id=1MtQZ3k4VhZ4SAU-aJyGueAJYb-7LIweO">
+            <p>Mohammed Misbahuddin</p>
+        </div>
+        <!-- header end -->     
+        
+        <!-- blog name section start -->
+        <div class="section">
+            <h2><span>About Me</span></h2>
+            <p>
+               Iam a CSE student from Hyderabad and a tech enthusiat. I worked on many projects, you can checkout some of them here. I do litte bit of Android security research and Web dvelopment. To know more about me follow me on social media. 
+            </p>
+        </div>
+        <!-- blog name section end -->
+        
+        
+        <!-- blog description section start -->
+        <div class="section">
+            <h2><span>My Projects</span></h2>
+            <div class="myDiv">
+                <p>
+                    <a href="https://github.com/misbahuddinmohd/mp3_player" color:black><h1>MP3 Player</h1></a>
+                    <p>play audio files.</p>
+                </p>
+            </div>
+            <div class="myDiv">
+                <p>
+                    <a href="https://github.com/misbahuddinmohd/jarvis" color:black><h1>Jarvis</h1></a>
+                    <p>This jarvis program is a python based voice assistant. You can give voice commands to jarvis and it respond to it accordingly. You can modify the code as per your convinience</p>
+                </p>
+            </div>
+            <div class="myDiv">
+                <p>
+                    <a href="https://github.com/misbahuddinmohd/texttospeech" color:black><h1>Text To Speech</h1></a>
+                    <p>convert your text file into audio</p>
+                </p>
+            </div>
+            <div class="myDiv">
+                <p>
+                    <a href="https://github.com/misbahuddinmohd/speechtotext" color:black><h1>Speech To Text</h1></a>
+                    <p>convert your speech into a text file</p>
+                </p>
+            </div>
+            
+        </div>
+        <!-- blog description section end -->
+        <div class="section">
+            <h2><span>Posts</span></h2>
+            <p>
+                will be coming soon
+            </p>
+        </div>
+             
+        <!-- Form section start -->
+       <div class="section">
+            <h2><span>Ask Me</span></h2>
+            
+            <svg class="face" height="100" width="100">
+                <circle cx="50" cy="50" r="50" fill="#FDD835"/>
+                <circle cx="30" cy="30" r="10" fill="#FFFFFF"/>
+                <circle cx="70" cy="30" r="10" fill="#FFFFFF"/>
+                <circle cx="30" cy="30" r="5" fill="#000000"/>
+                <circle cx="70" cy="30" r="5" fill="#000000"/>
+                <path d="M 30 70 q 20 20 40 0" stroke="#FFFFFF" stroke-width="5" fill="none" />
+            </svg>
+                 
+            <form action="https://formspree.io/f/xknknbgl" method="POST">
+                <input name="name" placeholder="Name" type="text" required /><br/>
+                <input name="email" placeholder="Email" type="email" required /><br/>
+                <textarea name="message" placeholder="Message" required ></textarea>
+                <input type="submit" value="SEND" class="submit" />
+            </form>
+        </div>
+        <!-- Form section end -->
+        
+        <!-- Contacts section start -->
+        <div class="section" id="contacts">
+            <h2><span>Follow Me</span></h2>
+            <div>
+                <a href=" https://www.instagram.com/invites/contact/?i=1ko5nd4f65dsc&utm_content=er3evhs" target="_blank">
+                    <img alt="instagram" src="https://drive.google.com/uc?export=view&id=1ICb8ve37nTDjbgey40KRM2hFgkpc61Um"/>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100011063231368">
+                    <img alt="Facebook" src="https://drive.google.com/uc?export=view&id=1Z7gAseTi3_ziOm91v85eSDJwHTtDmuNk"/>
+                </a>
+                <a href="https://twitter.com/MisbahUddinMoh4?s=09">
+                    <img alt="Twitter" src="https://drive.google.com/uc?export=view&id=16x_a5x3QfMNy5IuFsW8JYDEjHSySQJzm"/>
+                </a>
+                <a href="https://www.linkedin.com/in/mohammedmisbahuddin11/">
+                    <img alt="Linkedin" src="https://drive.google.com/uc?export=view&id=1LlTLPyrUK1_moc-0eiLV_GSr07l-YKqv"/>
+                </a>
+            </div>
+        </div>
+        <!-- Contacts section end -->
+        
+        <div class="copyright">
+            &copy; 2022 My Blog. All rights reserved.
+        </div>
+        
     </body>
 </html>
